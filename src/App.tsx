@@ -77,7 +77,203 @@ const DEFAULT_ROOM = {
   height: 20.5
 };
 
-const createDefaultItems = (): FurnitureItem[] => [];
+const DEFAULT_ITEMS: FurnitureItem[] = [
+  {
+    id: '1edef221-ee80-4609-8db7-c5aeba1829ca',
+    type: 'sofa',
+    label: 'Sofa',
+    color: '#4f7cac',
+    x: 7.25,
+    y: 9,
+    width: 3.25,
+    height: 3.25,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'd00ce16c-edc9-4c1a-9559-86b293719cd6',
+    type: 'sofa',
+    label: 'TV',
+    color: '#d17b4b',
+    x: 0,
+    y: 8.5,
+    width: 2,
+    height: 8,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'd8ad686d-c1ad-4e73-a7f2-04dceebaa493',
+    type: 'sofa',
+    label: 'Surfboards',
+    color: '#607f61',
+    x: 10.5,
+    y: 9,
+    width: 1,
+    height: 9.75,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'a07d4244-9bea-4583-9ea1-1a46a00139cf',
+    type: 'sofa',
+    label: 'Sofa',
+    color: '#4f7cac',
+    x: 7.25,
+    y: 12.25,
+    width: 3.25,
+    height: 3.25,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'fdfe2501-e6a6-4c25-bf9a-68f7c3e4ff4c',
+    type: 'sofa',
+    label: 'Sofa',
+    color: '#4f7cac',
+    x: 7.25,
+    y: 15.5,
+    width: 3.25,
+    height: 3.25,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'babe8983-7444-458b-b9da-6a55282b8542',
+    type: 'sofa',
+    label: 'Sofa',
+    color: '#4f7cac',
+    x: 4,
+    y: 12.25,
+    width: 3.25,
+    height: 3.25,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: '46ddce3e-c25d-4456-913b-a7479347ab3f',
+    type: 'sofa',
+    label: '',
+    color: '#5c707a',
+    x: 0,
+    y: 1.5,
+    width: 0.5,
+    height: 4.25,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: '0bb3ef0a-2b4c-48ec-b117-73ca451fd438',
+    label: '',
+    type: 'blocked',
+    x: 0,
+    y: 17.5,
+    width: 1.5,
+    height: 3,
+    rotation: 0,
+    color: '#7f868c',
+    shape: 'rect'
+  },
+  {
+    id: 'f09f56e9-ac56-4409-98e5-9cc4f4b5c634',
+    type: 'sofa',
+    label: 'CPU',
+    color: '#a04a5b',
+    x: 0,
+    y: 6.5,
+    width: 2,
+    height: 2,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'dc4a2e23-2941-4958-8845-59d2e0c3c7ae',
+    type: 'custom',
+    label: 'Speaker',
+    color: '#a04a5b',
+    x: 0,
+    y: 16.5,
+    width: 2,
+    height: 1,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: '6371ccc5-1264-4b85-a8c2-4a1b575bec42',
+    type: 'sofa',
+    label: 'Chair',
+    color: '#9d7dd8',
+    x: 3.75,
+    y: 3.5,
+    width: 1.5,
+    height: 1.5,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: '49b3685e-0acc-483f-a8a4-c08178fe9f09',
+    type: 'custom',
+    label: 'Table',
+    color: '#9d7dd8',
+    shape: 'rect',
+    x: 5.5,
+    y: 3,
+    width: 5.25,
+    height: 3.25,
+    rotation: 0
+  },
+  {
+    id: '465f3d2a-1f1f-4d06-bddf-4c797c33e914',
+    type: 'sofa',
+    label: 'Chair',
+    color: '#9d7dd8',
+    x: 8.75,
+    y: 6.5,
+    width: 1.5,
+    height: 1.5,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'fd12d366-23a4-4933-a9d8-7ddf06be1236',
+    type: 'sofa',
+    label: 'Chair',
+    color: '#9d7dd8',
+    x: 6.25,
+    y: 6.5,
+    width: 1.5,
+    height: 1.5,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: 'ef77938d-a46d-43c4-9177-fb8c1d5d43f1',
+    type: 'sofa',
+    label: 'Chair',
+    color: '#9d7dd8',
+    x: 7.5,
+    y: 1.25,
+    width: 1.5,
+    height: 1.5,
+    rotation: 0,
+    shape: 'rect'
+  },
+  {
+    id: '4f15f178-a42c-44ae-b370-c38e78aa20e1',
+    type: 'custom',
+    label: 'Surfboards',
+    color: '#607f61',
+    shape: 'rect',
+    x: 8.75,
+    y: 18.75,
+    width: 2.75,
+    height: 1.75,
+    rotation: 0
+  }
+];
+const DEFAULT_CREATE_COLOR = '#4f7cac';
+const createDefaultItems = (): FurnitureItem[] =>
+  DEFAULT_ITEMS.map((item) => ({ ...item }));
 const INITIAL_ITEMS = createDefaultItems();
 
 const GRID_UNIT = 0.25;
@@ -137,7 +333,7 @@ function App() {
   const [copiedItem, setCopiedItem] = useState<FurnitureItem | null>(null);
   const [canvasSize, setCanvasSize] = useState({ width: 900, height: 620 });
   const [isHydrated, setIsHydrated] = useState(false);
-  const [createColor, setCreateColor] = useState(COLOR_SWATCHES[0]);
+  const [createColor, setCreateColor] = useState(DEFAULT_CREATE_COLOR);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editingLabel, setEditingLabel] = useState('');
   const [versions, setVersions] = useState<SavedVersion[]>([]);
@@ -180,7 +376,7 @@ function App() {
     setSelectedIds(snapshot.selectedIds ?? []);
     setShowLabels(snapshot.showLabels);
     setSnap(snapshot.snap);
-    setCreateColor(snapshot.createColor || COLOR_SWATCHES[0]);
+    setCreateColor(snapshot.createColor || DEFAULT_CREATE_COLOR);
   };
 
   useEffect(() => {
@@ -571,14 +767,14 @@ function App() {
     setRoomWidthInput(String(DEFAULT_ROOM.width));
     setRoomHeightInput(String(DEFAULT_ROOM.height));
     setItems(defaultItems);
-    setSelectedId(defaultItems[0]?.id ?? null);
-    setSelectedIds(defaultItems[0]?.id ? [defaultItems[0].id] : []);
+    setSelectedId(null);
+    setSelectedIds([]);
     setShowLabels(true);
     setSnap(true);
     setPointerMode({ mode: 'idle' });
     setJsonDraft('');
     setCopiedItem(null);
-    setCreateColor(COLOR_SWATCHES[0]);
+    setCreateColor(DEFAULT_CREATE_COLOR);
   };
   const saveNewVersion = () => {
     const name = versionName.trim() || `Version ${versions.length + 1}`;

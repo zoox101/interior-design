@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { viteSingleFile } from 'vite-plugin-singlefile';
 export default defineConfig({
+    base: '/interior-design/',
     plugins: [react(), viteSingleFile()],
     build: {
         target: 'es2020',
